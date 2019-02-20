@@ -1,3 +1,9 @@
+//===========================================================
+//	Jeremy Saylor
+//	Due the 20th Feb 2019
+//	20 Feb 2019
+//	Description: Assignment 4
+//===========================================================
 #include <iostream>
 #include <cctype>
 #include <iomanip>
@@ -60,7 +66,7 @@ string selection3;
 bool done3 = true;
 do{	
 	cout << "Enter the years to pay off. ";
-	cin >> mortTerm;
+	cin >> selection3;
 	if (!parseInt(selection3, mortTerm))
 	{
 		cout << "Invalid input\n" << endl;
@@ -93,7 +99,7 @@ cout << "Years: " << Home.getYears() << endl;
 cout << setprecision(2);
 cout << "The required payments: $" << Home.getPayment() << " per month.\n" << endl;
 cout << setprecision(1);
-cout << "Total payment to the Bank after " << Home.getYears() << " is:\n";
+cout << "Total payment to the Bank after " << Home.getYears() << " years is:\n";
 cout << setprecision(2);
 cout << "$" << Home.getTotalBank() << endl << endl;
 
